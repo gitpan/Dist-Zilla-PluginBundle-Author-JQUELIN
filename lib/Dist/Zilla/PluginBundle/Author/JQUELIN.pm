@@ -12,7 +12,7 @@ use warnings;
 
 package Dist::Zilla::PluginBundle::Author::JQUELIN;
 {
-  $Dist::Zilla::PluginBundle::Author::JQUELIN::VERSION = '2.120970';
+  $Dist::Zilla::PluginBundle::Author::JQUELIN::VERSION = '2.120971';
 }
 # ABSTRACT: Build & release a distribution like jquelin
 
@@ -176,7 +176,7 @@ Dist::Zilla::PluginBundle::Author::JQUELIN - Build & release a distribution like
 
 =head1 VERSION
 
-version 2.120970
+version 2.120971
 
 =head1 SYNOPSIS
 

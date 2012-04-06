@@ -82,7 +82,7 @@
    "provides" : {
       "Dist::Zilla::PluginBundle::Author::JQUELIN" : {
          "file" : "lib/Dist/Zilla/PluginBundle/Author/JQUELIN.pm",
-         "version" : "2.120970"
+         "version" : "2.120971"
       }
    },
    "release_status" : "stable",
@@ -94,12 +94,12 @@
       "homepage" : "http://search.cpan.org/dist/Dist-Zilla-PluginBundle-Author-JQUELIN/",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/jquelin/dist-zilla-pluginbundle-jquelin.git",
-         "web" : "http://github.com/jquelin/dist-zilla-pluginbundle-jquelin"
+         "url" : "git://github.com/jquelin/dist-zilla-pluginbundle-author-jquelin.git",
+         "web" : "http://github.com/jquelin/dist-zilla-pluginbundle-author-jquelin"
       },
       "x_MailingList" : "http://www.listbox.com/subscribe/?list_id=139292"
    },
-   "version" : "2.120970",
+   "version" : "2.120971",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
