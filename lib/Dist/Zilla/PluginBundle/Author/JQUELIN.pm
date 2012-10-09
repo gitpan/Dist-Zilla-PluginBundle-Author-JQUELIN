@@ -12,7 +12,7 @@ use warnings;
 
 package Dist::Zilla::PluginBundle::Author::JQUELIN;
 {
-  $Dist::Zilla::PluginBundle::Author::JQUELIN::VERSION = '3.001';
+  $Dist::Zilla::PluginBundle::Author::JQUELIN::VERSION = '3.002';
 }
 # ABSTRACT: Build & release a distribution like jquelin
 
@@ -71,7 +71,8 @@ sub bundle_config {
     # params for pod weaver
     $arg->{weaver} ||= 'pod';
 
-    my $release_branch = 'releases';
+    my @dirty = ( "Changes", "dist.ini", "README.mkdn" );
+    my @allow_dirty = ( allow_dirty => \@dirty );
 
     # long list of plugins
     my @wanted = (
@@ -123,8 +124,8 @@ sub bundle_config {
         # -- release
         [ CheckChangeLog => {} ],
         [ TestRelease    => {} ],
-        [ "Git::Check"   => { allow_dirty => "README.mkdn" } ],
-        [ "Git::Commit"  => {} ],
+        [ "Git::Check"   => { @allow_dirty } ],
+        [ "Git::Commit"  => { @allow_dirty } ],
         [ "Git::Tag"     => {} ],
         [ "Git::Push"    => {} ],
 
@@ -164,7 +165,7 @@ Dist::Zilla::PluginBundle::Author::JQUELIN - Build & release a distribution like
 
 =head1 VERSION
 
-version 3.001
+version 3.002
 
 =head1 SYNOPSIS
 

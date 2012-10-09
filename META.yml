@@ -19,7 +19,7 @@ name: Dist-Zilla-PluginBundle-Author-JQUELIN
 provides:
   Dist::Zilla::PluginBundle::Author::JQUELIN:
     file: lib/Dist/Zilla/PluginBundle/Author/JQUELIN.pm
-    version: 3.001
+    version: 3.002
 requires:
   Class::MOP: 0
   Dist::Zilla::Plugin::AutoPrereqs: 0
@@ -73,7 +73,7 @@ resources:
   homepage: http://search.cpan.org/dist/Dist-Zilla-PluginBundle-Author-JQUELIN/
   repository: git://github.com/jquelin/dist-zilla-pluginbundle-author-jquelin.git
   x_MailingList: http://www.listbox.com/subscribe/?list_id=139292
-version: 3.001
+version: 3.002
 x_Dist_Zilla:
   perl:
     version: 5.016001

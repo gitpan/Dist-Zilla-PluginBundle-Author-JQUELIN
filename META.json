@@ -86,7 +86,7 @@
    "provides" : {
       "Dist::Zilla::PluginBundle::Author::JQUELIN" : {
          "file" : "lib/Dist/Zilla/PluginBundle/Author/JQUELIN.pm",
-         "version" : "3.001"
+         "version" : "3.002"
       }
    },
    "release_status" : "stable",
@@ -103,7 +103,7 @@
       },
       "x_MailingList" : "http://www.listbox.com/subscribe/?list_id=139292"
    },
-   "version" : "3.001",
+   "version" : "3.002",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.016001"
