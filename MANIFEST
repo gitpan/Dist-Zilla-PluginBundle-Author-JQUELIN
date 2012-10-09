@@ -6,7 +6,6 @@ MANIFEST
 META.json
 META.yml
 README
-README.mkdn
 TODO
 dist.ini
 examples/dist.ini

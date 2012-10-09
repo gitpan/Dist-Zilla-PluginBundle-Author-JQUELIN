@@ -19,7 +19,7 @@ name: Dist-Zilla-PluginBundle-Author-JQUELIN
 provides:
   Dist::Zilla::PluginBundle::Author::JQUELIN:
     file: lib/Dist/Zilla/PluginBundle/Author/JQUELIN.pm
-    version: 3.000
+    version: 3.001
 requires:
   Class::MOP: 0
   Dist::Zilla::Plugin::AutoPrereqs: 0
@@ -73,7 +73,7 @@ resources:
   homepage: http://search.cpan.org/dist/Dist-Zilla-PluginBundle-Author-JQUELIN/
   repository: git://github.com/jquelin/dist-zilla-pluginbundle-author-jquelin.git
   x_MailingList: http://www.listbox.com/subscribe/?list_id=139292
-version: 3.000
+version: 3.001
 x_Dist_Zilla:
   perl:
     version: 5.016001
@@ -199,8 +199,8 @@ x_Dist_Zilla:
       name: '@Author::JQUELIN/Readme'
       version: 4.300024
     -
-      class: Dist::Zilla::Plugin::ReadmeMarkdownFromPod
-      name: '@Author::JQUELIN/ReadmeMarkdownFromPod'
+      class: Dist::Zilla::Plugin::ReadmeAnyFromPod
+      name: '@Author::JQUELIN/ReadmeAnyFromPod'
       version: 0.120120
     -
       class: Dist::Zilla::Plugin::Manifest

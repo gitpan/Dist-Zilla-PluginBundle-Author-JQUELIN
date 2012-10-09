@@ -12,7 +12,7 @@ use warnings;
 
 package Dist::Zilla::PluginBundle::Author::JQUELIN;
 {
-  $Dist::Zilla::PluginBundle::Author::JQUELIN::VERSION = '3.000';
+  $Dist::Zilla::PluginBundle::Author::JQUELIN::VERSION = '3.001';
 }
 # ABSTRACT: Build & release a distribution like jquelin
 
@@ -110,20 +110,20 @@ sub bundle_config {
         [ MetaConfig              => {} ],
 
         # -- generate meta files
-        [ HelpWanted            => {} ],
-        [ License               => {} ],
-        [ Covenant              => {} ],
-        [ MetaYAML              => {} ],
-        [ MetaJSON              => {} ],
-        [ ModuleBuild           => {} ],
-        [ Readme                => {} ],
-        [ ReadmeMarkdownFromPod => {} ],
-        [ Manifest              => {} ], # should come last
+        [ HelpWanted       => {} ],
+        [ License          => {} ],
+        [ Covenant         => {} ],
+        [ MetaYAML         => {} ],
+        [ MetaJSON         => {} ],
+        [ ModuleBuild      => {} ],
+        [ Readme           => {} ],
+        [ ReadmeAnyFromPod => { location => "root", type => "markdown" } ],
+        [ Manifest         => {} ], # should come last
 
         # -- release
         [ CheckChangeLog => {} ],
         [ TestRelease    => {} ],
-        [ "Git::Check"   => {} ],
+        [ "Git::Check"   => { allow_dirty => "README.mkdn" } ],
         [ "Git::Commit"  => {} ],
         [ "Git::Tag"     => {} ],
         [ "Git::Push"    => {} ],
@@ -164,7 +164,7 @@ Dist::Zilla::PluginBundle::Author::JQUELIN - Build & release a distribution like
 
 =head1 VERSION
 
-version 3.000
+version 3.001
 
 =head1 SYNOPSIS
 
