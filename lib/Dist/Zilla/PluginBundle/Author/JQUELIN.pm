@@ -11,11 +11,8 @@ use strict;
 use warnings;
 
 package Dist::Zilla::PluginBundle::Author::JQUELIN;
-{
-  $Dist::Zilla::PluginBundle::Author::JQUELIN::VERSION = '3.002';
-}
 # ABSTRACT: Build & release a distribution like jquelin
-
+$Dist::Zilla::PluginBundle::Author::JQUELIN::VERSION = '3.003';
 use Class::MOP;
 use Moose;
 use Moose::Autobox;
@@ -143,7 +140,6 @@ sub bundle_config {
             ($plugin, $name, $arg) = @$wanted;
         }
         my $class = "Dist::Zilla::Plugin::$plugin";
-        Class::MOP::load_class($class); # make sure plugin exists
         push @plugins, [ "$section->{name}/$name" => $class => $arg ];
     }
 
@@ -159,13 +155,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Dist::Zilla::PluginBundle::Author::JQUELIN - Build & release a distribution like jquelin
 
 =head1 VERSION
 
-version 3.002
+version 3.003
 
 =head1 SYNOPSIS
 
@@ -206,9 +204,9 @@ You can look for information on this module at:
 
 =over 4
 
-=item * Search CPAN
+=item * CPAN
 
-L<http://search.cpan.org/dist/Dist-Zilla-PluginBundle-Author-JQUELIN>
+L<http://metacpan.org/release/Dist-Zilla-PluginBundle-Author-JQUELIN>
 
 =item * See open / report bugs
 
